@@ -1,0 +1,29 @@
+[package]
+name = "xiaomi"
+version = "1.0.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4.31"
+chrono-tz = "0.8.3"
+clap = { version = "4.4.6", features = ["derive"] }
+console = "0.15.7"
+indicatif = "0.17.7"
+prettytable-rs = "0.10.0"
+serde = { version = "1.0.189", features = ["derive"] }
+toml = "0.8.2"
+
+# See what's in crate and it's feature:
+# https://github.com/microsoft/windows-rs/blob/master/crates/libs/windows/src/Windows/Devices/Bluetooth/Advertisement
+[dependencies.windows]
+version = "0.48"
+features = [
+    "Devices_Bluetooth",
+    "Devices_Bluetooth_Advertisement",
+    "Devices_Bluetooth_GenericAttributeProfile",
+    "Foundation",  # this is required for wiring winrt object's event handler
+    "Foundation_Collections",
+    "Storage_Streams",
+]

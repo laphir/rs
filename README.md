@@ -1,7 +1,7 @@
 I'm sharing utilities that I tinkered with while studying rust.
 
-Projects:
-| project | status  | description |
+## Projects
+| name    | status  | description |
 |---------|---------|-------------|
 | xiaomi  | working | Sync xiaomi clock device  |
 
